@@ -1,0 +1,79 @@
+.card {
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  justify-content: around;
+  padding: 1rem;
+  max-width: 80%;
+  margin: 1rem;
+}
+
+img {
+  width: 25%;
+  height: auto;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-info {
+  margin-left: 1.5rem;
+}
+
+.recipe-desc {
+  margin-left: 1rem;
+}
+
+.recipe-title,
+.list-title {
+  font-family: var(--ff-acme);
+  font-weight: 400;
+}
+
+.recipe-title {
+  margin: 1rem;
+  font-size: 2.5rem;
+  border-bottom: 0.25rem solid var(--c-blue);
+}
+
+.list-title {
+  margin: 0.5rem 0;
+  font-size: 1.625rem;
+  color: var(--c-blue);
+}
+
+.card-lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 1.5rem;
+}
+
+.ingredients-list,
+.instructions-list {
+  min-width: 15%;
+}
+
+.ingredients-list {
+  margin-left: 1rem;
+  & ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+}
+
+.list-item {
+  margin-bottom: 0.75rem;
+}
+
+.instructions-list {
+  width: 50%;
+
+  & ol {
+    padding-left: 1.25rem;
+  }
+}

@@ -3,7 +3,7 @@ import EventCardTags from './EventCardTags';
 export default function EventCard(props) {
   const { eventDetails } = props;
   return (
-    <div className='w-[20rem] bg-gray-700 rounded-2xl flex flex-col text-white'>
+    <div className='w-[20rem] bg-gray-700 rounded-2xl flex flex-col text-white drop-shadow-xl'>
       <img
         className='aspect-square rounded-t-2xl'
         src='https://placehold.co/400'

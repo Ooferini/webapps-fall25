@@ -3,7 +3,7 @@ import EventsPage from './pages/EventsPage';
 
 const App = () => {
   return (
-    <div>
+    <div className='bg-slate-500 h-screen overflow-y-scroll'>
       <EventsPage />
     </div>
   );

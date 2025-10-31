@@ -40,6 +40,33 @@ export const EVENTS = [
     location: 'Mercury Lounge',
     committees: [{ id: 0, value: 'Arts' }],
   },
+  {
+    title: 'Sweets in NYC',
+    date: 'Wednesday October 29th',
+    time: '7pm',
+    location: 'Kimmel 208',
+    committees: [{ id: 4, value: 'Lectures' }],
+  },
+  {
+    title: 'Sentimental Value Screening',
+    date: 'Wednesday October 29th',
+    time: '8pm',
+    location: 'Angelika Film Center',
+    committees: [
+      { id: 3, value: 'Film' },
+      { id: 8, value: 'Pre-Release' },
+    ],
+  },
+  {
+    title: 'I Love LA Screening + Q&A',
+    date: 'Tuesday November 3rd',
+    time: '7pm',
+    location: 'Angelika Film Center',
+    committees: [
+      { id: 3, value: 'Film' },
+      { id: 8, value: 'Pre-Release' },
+    ],
+  },
 ];
 
 export const COMMITTEES = [

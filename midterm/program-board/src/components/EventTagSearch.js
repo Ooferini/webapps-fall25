@@ -5,6 +5,7 @@ export default function EventTagSearch(props) {
   const { activeTags, handleClick } = props;
   return (
     <div className='px-4 pt-4 flex flex-row gap-1'>
+      <div className='text-white text-2xl mr-2'>Committee filter:</div>
       {COMMITTEES.map((tag) => {
         return (
           activeTags.includes(tag) && (

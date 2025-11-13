@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import useTodosContext from '../hooks/use-todos-context';
 
 // you can destructure props in the function declaration parameter thing
-export default function TodoCreate({ onCreate, todos }) {
+export default function TodoCreate() {
+  const { createTodo } = useTodosContext();
   const [title, setTitle] = useState('');
 
   const handleChange = (event) => {
@@ -10,7 +12,7 @@ export default function TodoCreate({ onCreate, todos }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onCreate(title);
+    createTodo(title);
     setTitle('');
   };
 

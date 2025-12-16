@@ -11,7 +11,7 @@ const SportsCard = () => {
   };
   return (
     <div
-      className='rounded-lg col-span-2 row-span-1 flex bg-blue-200'
+      className='drop-shadow-xl rounded-lg col-span-2 row-span-1 flex bg-blue-200'
       onClick={getSportsResults}
     >
       <div className='text-4xl flex flex-col p-4 container justify-around'>

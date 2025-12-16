@@ -17,12 +17,12 @@ export default function TodoCreate({ onCreate, todos }) {
   return (
     <form className='flex flex-row mx-auto' onSubmit={handleSubmit}>
       <input
-        className='mr-1 border-slate-600 border-2'
+        className='mr-1 border-slate-600 border-2 rounded-lg'
         type='text'
         value={title}
         onChange={handleChange}
       />
-      <button className='bg-green-600 p-1 px-2 rounded-xl text-nowrap'>
+      <button className='bg-green-600 px-2 rounded-full text-nowrap text-white'>
         +
       </button>
     </form>

@@ -29,15 +29,13 @@ function TodoCard() {
 
   const editTodoById = (id, newTitle) => {
     const updatedTodos = todos.map((todo) => {
-      if (todo.id === id) {
-        return { ...todo, title: newTitle };
-      }
+      return todo.id === id && { ...todo, title: newTitle };
     });
     setTodos(updatedTodos);
   };
 
   return (
-    <div className='rounded-lg col-span-2 row-span-3 flex flex-col bg-blue-200 p-2'>
+    <div className='drop-shadow-xl rounded-lg col-span-2 row-span-3 flex flex-col bg-blue-200 p-2'>
       <TodoCreate onCreate={createTodo} />
       <TodoList
         todos={todos}
